@@ -5,6 +5,7 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /* color: black; */
 }
 
 img {
@@ -16,6 +17,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  margin: 12px;
 }
 
 input {
@@ -23,4 +25,77 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+  padding-right: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 5%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  text-decoration: none;
+  padding-right: 50px;
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  background-color: whitesmoke;
+  height: 5%;
+
+}
+
+.left-links {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  position: sticky;
+  text-decoration: none;
+  color: black;
+}
+
+.right-links {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  position: sticky;
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  color: black;
+  padding: 15px;
+}
+
+ul {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  padding: 1rem;
+  min-height: 100vh; /* Ensure content area is tall enough to demonstrate scrolling */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  margin-top: -80px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
